@@ -953,7 +953,7 @@ ul.lista-precios > li {
 }
 
 div.tabla-precio {
-  border: 1px solid #008616;
+  border: 1px solid #003e86;
   background-color: #ffffff;
   padding: 40px 0;
   text-align: center;
@@ -961,7 +961,7 @@ div.tabla-precio {
 }
 div.tabla-precio:hover {
   transform: scale(1.1);
-  border: 1px solid #008616;
+  border: 1px solid #003e86;
   box-shadow: 0px 0px 50px #666;
 }
 div.tabla-precio ul li {
@@ -978,14 +978,14 @@ div.tabla-precio ul li:before {
   vertical-align: top;
   padding: 0 5px;
   font-size: 20px;
-  color: green;
+  color: #003e86;
   -webkit-font-smoothing: antialiased;
   content: '\f00c';
   
 }
 div.tabla-precio h3 {
   font-family: 'Oswald', sans-serif;
-  font-size:16px;
+  font-size:20px;
   text-transform: uppercase;
 }
 div.tabla-precio p.numero {
@@ -1741,3 +1741,36 @@ iframe{
 }
 .num LI { display: block }
 .num LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+
+.fw-300 {
+  font-weight: 300;
+}
+.centrar-texto {
+  text-align: center;
+}
+/*** Testimoniales **/
+.testimonial {
+  background-color: #71B100;
+  font-size: 2.4rem;
+  padding: 4rem;
+  color: #ffffff;
+  border-radius: 2rem;
+}
+.testimonial  p {
+  text-align: right;
+}
+.testimonial blockquote::before {
+  content: '';
+  background-image: url(../img/comilla.svg);
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  left: -2rem;
+}
+
+.testimonial blockquote {
+  position: relative;
+  padding-left: 5rem;
+  font-weight: 300;
+}
